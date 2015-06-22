@@ -46,22 +46,15 @@ Outgroups:
 
 **Analysis**
 
-1. Synteny blocks and breakpoints
+1. Synteny blocks and breakpoints. see [Synteny and rearangements](synteny.md)
  * Feline-specific breakpoints
  * Grimm Synteny can not evaluate synteny for too many species (5-6 maximally)
  * Summarize the pieces of software for synteny blocks
  
-References:
-* Evaluating synteny for improved comparative studies 10.1093/bioinformatics/btu259
-
- 
-2. Rearrangements
+2. Rearrangements. see [Synteny and rearangements](synteny.md)
  * How to classify the rearrangements occured to the whole scaffolds
  * Try MGRA - ?
  * Most tools reconstruct the rearrangements __scenario___. It's hardly possible to check if the given scenario really took place. (It could be also multiple possible scenarios)
- 
-References:
-* Comparing genomes with rearrangements and segmental duplications http://bioinformatics.oxfordjournals.org/content/31/12/i329.full - brand new paper (Jun,2015) in bioinformatics. Suggest linear programming algorithm
  
 3. Constrained elements
  * Combine GERP, phastCons
