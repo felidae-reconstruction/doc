@@ -1,4 +1,4 @@
-# Synteny and Rearraangements
+# Synteny and Rearrangements
 * References:
   - Mingfu Shao and Bernard M.E. Moret 
     Comparing genomes with rearrangements and segmental duplications
