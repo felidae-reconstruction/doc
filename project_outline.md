@@ -43,7 +43,7 @@ Outgroups:
 * - Malayan pangolin
 * ? Hyena
 
-**Analysis**
+**Synteny Analysis**
 
 1. Synteny blocks and breakpoints. see [Synteny and rearangements](synteny.md)
  * Feline-specific breakpoints
@@ -55,12 +55,28 @@ Outgroups:
  * Try MGRA - ?
  * Most tools reconstruct the rearrangements _scenario_. It's hardly possible to check if the given scenario really took place. (It could be also multiple possible scenarios)
  
-3. Constrained elements
+*MHC analysis*
+ 
+**Selection Analysis**
+
+1. Constrained elements
  * Combine GERP, phastCons
  * Figure out why GERP is so slow
  * Search for regions related for Feline specific genetic deseases and check if they are conserved
  * ? Rate of core eucaryotic genes that fall into constrained regions
  * Now gene coverage was calculated as intersection with mRNA (~70% for phastCons), try intersect with exons (CDS) only
+
+2. dN/dS analysis
+
+3. Compare copy number of some genes present in the feline genomes (like it was done in avian research for beta-keratins)
+
+4. Traits
+ * Diet
+ * Fur, color
+ * Skeletal structure - why some cats run faster, climbing facilities, way to fall down safely
+ * Why do cats purr - The purr is produced through intermittent signaling of the laryngeal and diaphragmatic muscles - genetic bases
+ * How domestication influenced the genome?
+   * Domestic cats are very prone to the kidney desease - if the other cats are also prone to it?
 
 *Gene analysis and TransMap* 
 
@@ -75,4 +91,10 @@ Outgroups:
  * We don't have long non-coding RNAs for cat and mapping them from those distant species like mouse or human can be difficult
  * There are short non-coding RNAs for the FelCat 6.2. (about 100bp)
 
-3. Traits
+3. Compare sizes of genomic element (exons, introns ..) with other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
+
+*Repeats*
+
+ Compare SINE, LINE, LTR, STR annotation - find common patterns in different feline genomes
+ 
+
