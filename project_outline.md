@@ -5,18 +5,18 @@ Outline for the comparative felidae project
 Felines:
 
 * Domestic cat
-* - Wildcat
 * Cheetah
 * African Lion
-* - Af & Asian lion
 * Tiger
-* - Snow Leopard
 * Amur Leopard
 * Jaguar
+* - Wildcat
+* - Af & Asian lion
+* - Snow Leopard
 * ? Lynx
 * -Florida panther  
 * - Western Puma
-* ? Clouded leopard
+* - Clouded leopard
 * - Sunda Cl.Leopard 
 * - Leopard cat
 * - Fishing cat
@@ -24,11 +24,8 @@ Felines:
 * - Rusty Spotted cat
  
 Outgroups:
-
-* ? Hyena
-* dog
+* Dog
 * Chinese pangolin
-* - Malayan pangolin
 * human
 * Elephant
 * Mouse (reference assembly)
@@ -43,6 +40,8 @@ Outgroups:
 * Rabbit
 * Sheep
 * Cow
+* - Malayan pangolin
+* ? Hyena
 
 **Analysis**
 
