@@ -70,12 +70,16 @@ References:
  * ? Rate of core eucaryotic genes that fall into constrained regions
  * Now gene coverage was calculated as intersection with mRNA (~70% for phastCons), try intersect with exons (CDS) only
 
-*Gene analysis* 
+*Gene analysis and TransMap* 
 4. Gene evolution
+* map domestic cat gene annotation and cat's rnaseq data to other genomes
+ (rnaseq will provide more confidence)
+* Gene expansion, contraction
+* Infer orthology and paralogy from the gene mapping
+* Pseudogenes - Ian's comparative gene annotator (recognize genes from pseudogenes)
 
-5. Long non-coding RNAs
+5. Long non-coding RNAs 
+ * We don't have long non-coding RNAs for cat and mapping them from those distant species like mouse or human can be difficult
+ * There are short non-coding RNAs for the FelCat 6.2. (about 100bp)
 
-6. Pseudogenes
-
-7. Traits
-
+6. Traits
