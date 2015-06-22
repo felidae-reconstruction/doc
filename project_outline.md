@@ -1,7 +1,9 @@
 Outline for the comparative felidae project
 
 **Multiple Alignments**
-1. Felines:
+
+Felines:
+
 * Domestic cat
 * - Wildcat
 * Cheetah
@@ -21,9 +23,23 @@ Outline for the comparative felidae project
 * - caracal
 * - Rusty Spotted cat
  
-2. Outgroups:
+Outgroups:
+
 * ? Hyena
 * dog
 * Chinese pangolin
 * - Malayan pangolin
 * human
+* Elephant
+* Mouse (reference assembly)
+* Rat
+* Prarie vole 
+* Egyptan Gerboa
+* Human
+* Chimp 
+* Gorilla
+* Orang
+* Resus macaque
+* Rabbit
+* Sheep
+* Cow
