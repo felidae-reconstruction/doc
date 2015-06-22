@@ -16,3 +16,6 @@
   - DRIMM http://bix.ucsd.edu/projects/drimm/
     - DRIMM algorithm extends the GRIMM-Synteny algorithm towards the problem of identifying the synteny blocks in highly duplicated genomes.
     - in C#, Linux version planned, but not yet available
+    
+  - SyMAP was used in the tiger paper (10.1038/ncomms3433)
+    - Desktop application. It is not able to work with the large data - fails with the memory error. 
