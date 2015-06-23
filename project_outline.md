@@ -1,5 +1,12 @@
 Outline for the comparative felidae project
 
+**Goals** 
+Study Feline evolution:
+* Chromosome structure evolution: Felid-specific breakpoints, specie-specific breakpoints, genes involved into rearrangements
+* Nucleotide sequence evolution - selection analysis - constrained elements, dN/dS
+* Gene evolution (expansion, contraction, conserved genes, pseudogenes)
+* Evolution of traits - genes involved into the traits development
+
 **Multiple Alignments**
 
 Felines:
@@ -91,7 +98,7 @@ Outgroups:
  * We don't have long non-coding RNAs for cat and mapping them from those distant species like mouse or human can be difficult
  * There are short non-coding RNAs for the FelCat 6.2. (about 100bp)
 
-3. Compare sizes of genomic element (exons, introns ..) with other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
+3. Compare sizes of genomic element (exons, introns ..) to other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
 
 *Repeats*
 
