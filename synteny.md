@@ -21,3 +21,7 @@
     - Desktop application. It is not able to work with the large data - fails with the memory error.
   
   - Satsuma Synteny, SyntenyTracker were used in the comparative avian genome analysis (see supplement to 10.1126/science.1251385)
+
+  - Ragout  use https://github.com/fenderglass/maf2synteny
+    Limited to <= 20 genomes; default synteny block scale is 5000
+
