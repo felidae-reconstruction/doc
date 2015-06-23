@@ -4,7 +4,7 @@ Outline for the comparative felidae project
 
 Felines:
 
-* Domestic cat
+* Domestic cat (FelCat 8.0)
 * Cheetah
 * African Lion
 * Tiger
