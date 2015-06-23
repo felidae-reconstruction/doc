@@ -1,0 +1,23 @@
+Species	Common name	Version	Genbank Accession	Where done	Abbrv	Assembly	Type	numContig0	numContig1000	lenContig0	lenContig1000	numContig500	longistContig500	lenContig500	gcContent	N50Contig500	N75Contig500	L50Contig500	L75Contig500	NBasesPer100Kbp
+Felis catus	Domestic cat	Felis_catus_8.0	GCA_000181335.3 	Wash U	FCA	Celera	chromosome													
+Felis silvestris	Wildcat			NIAAA	FSI															
+Acinonyx jubatus	Cheetah			BGI	AJU	SOAPdeNovo	scaffold	40077	3582	2375874546	2367728152	7372	13046067	2370423971	41.29	3122036	1721018	232	490	1774.24
+Panthera leo	Africian Lion			Korea	PLE	SOAPdeNovo	scaffold	87873	6599	2442522584	2423486387	16092	27160947	2430260997	41.27	4026683	1996432	184	398	3337.38
+Panthera leo	Af & Asian lion			BGI		SOAPdeNovo														
+Panthera tigris	Tiger	PanTig1.0	GCA_000464555.1	Korea	PTI	SOAPdeNovo	scaffold	1545	992	2391166133	2390872112	1298	41607841	2391089534	41.4	8860407	4772388	87	176	2433.98
+Panthera uncia	Snow Leopard			Korea	PUN															
+Panthera pardus	Leopard			Hudson Alpha; Moleculo Illumina	PPA															
+Panthera onca	Jaguar			Univ Porte Allegra	PON		scaffold	7521	7442	2405344986	2405268288	7521	8985697	2405344986	41.51	1516931	789497	474	1025	5093.94
+Lynx pardalis	Lynx			Spain	LPA															
+Puma concolor	Florida panther			BGI	PCO-COR															
+Puma concolor	Western Puma			UCSC	PCO															
+Neofelis nebulosa	Clouded leopard			Smithsonian	NNE															
+Neofelis diardi	Sunda Cl.Leopard 			Smithsonian	NDI															
+Prionailuris bengalensis	Leopard cat			Natural History Museum of Denmark, 	PBE															
+Prionailuris viverrina	Fishing cat			Natural History Museum of Denmark, 	PVI															
+Caracal caracal	caracal			Natural History Museum of Denmark, 																
+Prionailuris rubiginosis 	Rusty Spotted cat			Natural History Museum of Denmark, 																
+Crocuta crocuta	Hyena			BGI	CCR	SOAPdeNovo														
+Canis familiaris 	dog			Broad	CFA	AllPathsLG														
+Manis pentadactyla	Chinese pangolin			Wash U 	MPE	SOAPdeNovo														
+Manis javanica	Malayan pangolin			u Malaysia	MPE	SOAPdeNovo														

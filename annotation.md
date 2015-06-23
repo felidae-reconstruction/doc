@@ -21,6 +21,9 @@
     | EST              |   919 |
     | RefSeq (NM/NR)   |   416 |
 
+* retroposed genes identification
+* protein coding gene conservation
+
 * TransMap genes
 * Investigate
   - http://genome.ucsc.edu/ENCODE/externalTools.html

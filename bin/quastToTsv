@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+"""
+Convert a quast output into rows to insert in the spread sheet.
+"""
+
+import argparse
+
+def parseArgs():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("quastFile", help="""input quast file""")
+    parser.add_argument("outputTsv", help="""output TSV """)
+    return parser.parse_args()
+
+rowColumnNames = (
+    ("Assembly",                    "assembly"),
+    ("# contigs (>= 0 bp)",         "numContig0"),
+    ("# contigs (>= 1000 bp)",      "numContig1000"),
+    ("Total length (>= 0 bp)",      "lenContig0"),
+    ("Total length (>= 1000 bp)",   "lenContig1000"),
+    ("# contigs",                   "numContig500"),
+    ("Largest contig",              "longistContig500"),
+    ("Total length",                "lenContig500"),
+    ("GC (%)",                      "gcContent"),
+    ("N50",                         "N50Contig500"),
+    ("N75",                         "N75Contig500"),
+    ("L50",                         "L50Contig500"),
+    ("L75",                         "L75Contig500"),
+    ("# N's per 100 kbp",           "NBasesPer100Kbp"))
+
+rowColumnNamesMap = dict(rowColumnNames)
+
+def parseQuastLine(line):
+    # Total length (>= 1000 bp)  2367728152
+    return (line[0:26].strip(), line[27:].strip())
+
+def loadQuast(quastFh):
+    data={}
+    for line in quastFh:
+        line = line[:-1]
+        if not (line.startswith("All statistics") or (len(line) == 0)):
+            key, value = parseQuastLine(line)
+            data[rowColumnNamesMap[key]] = value
+    return data
+
+def writeTsv(data, fh):
+    header = [rowCol[1] for rowCol in rowColumnNames]
+    row = [data[col] for col in header]
+    fh.write("\t".join(header) + "\n")
+    fh.write("\t".join(row) + "\n")
+
+
+def main():
+    args = parseArgs()
+    with open(args.quastFile) as quastFh:
+        data = loadQuast(quastFh)
+    with open(args.outputTsv, "w") as outputTsvFh:
+        writeTsv(data, outputTsvFh)
+
+main()
+
+    
