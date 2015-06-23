@@ -112,7 +112,7 @@ Outgroups:
 
 3. Compare sizes of genomic element (exons, introns ..) to other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
 
-*Repeats*
+**Repeats**
  * Compare repetitive content
  * Feline specific repeats
  * Search for transposable elements in feline genomes.
