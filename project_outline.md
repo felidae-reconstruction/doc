@@ -1,6 +1,23 @@
 Outline for the comparative felidae project
 
+**Goals** 
+
+Study Feline evolution:
+
+* Chromosome structure evolution: Felid-specific breakpoints, specie-specific breakpoints, genes involved into rearrangements
+* Nucleotide sequence evolution - selection analysis - constrained elements, dN/dS
+* Gene evolution - expansion, contraction, conserved genes, pseudogenes
+* Evolution of repetitive elements: interspersed and tandem repeats, transposons
+* Evolution of traits - genes involved into the traits development
+
 **Multiple Alignments**
+
+We are going to produce multiple alignments of feline species including several outgroups.
+Among the available feline assemblies we choose those that were assembled at least into scaffolds. We are not aware about the availability of the Lynx genome ('?' sign), and the other feline species are either were not sequenced yet or don't have a good quality assembly ('-' means not available or just reads). 
+
+The dog genome was selected as the closest outgroup for felines. The pangolin assembly is the outgroup to Carnivora family, we also included the primates lineage in order to perform comparison with the human genome.
+
+We are going to include the mouse genome into our alignments because it's well annotated and it can help with transmapping genes. We are going to carry some alignments performed in the mouse strain project performed at UCSC to our project as other outgroups to the feline species. They include the rodent species (Mouse (reference assembly), Rat, Prarie vole, Egyptan Gerboa), two species from the Bovidae family, and an elephant assembly.
 
 Felines:
 
@@ -8,13 +25,13 @@ Felines:
 * Cheetah
 * African Lion
 * Tiger
-* Amur Leopard
+* Amur + Chineese Leopard
 * Jaguar
 * - Wildcat
 * - Af & Asian lion
 * - Snow Leopard
 * ? Lynx
-* -Florida panther  
+* - Florida panther  
 * - Western Puma
 * - Clouded leopard
 * - Sunda Cl.Leopard 
@@ -55,7 +72,9 @@ Outgroups:
  * Try MGRA - ?
  * Most tools reconstruct the rearrangements _scenario_. It's hardly possible to check if the given scenario really took place. (It could be also multiple possible scenarios)
  
-*MHC analysis*
+**MHC analysis**
+ * Analysis of the evolution of conservative and variable regions
+ * Evolution of olfactory receptors
  
 **Selection Analysis**
 
@@ -78,7 +97,7 @@ Outgroups:
  * How domestication influenced the genome?
    * Domestic cats are very prone to the kidney desease - if the other cats are also prone to it?
 
-*Gene analysis and TransMap* 
+*Gene analysis and TransMap* see [Annotation](annotation.md)
 
 1. Gene evolution
  * map domestic cat gene annotation and cat's rnaseq data to other genomes
@@ -91,10 +110,11 @@ Outgroups:
  * We don't have long non-coding RNAs for cat and mapping them from those distant species like mouse or human can be difficult
  * There are short non-coding RNAs for the FelCat 6.2. (about 100bp)
 
-3. Compare sizes of genomic element (exons, introns ..) with other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
+3. Compare sizes of genomic element (exons, introns ..) to other species (s. [Comparative genomics reveals insights into avian genome evolution and adaptation](http://www.sciencemag.org/content/346/6215/1311.full))
 
-*Repeats*
-
- Compare SINE, LINE, LTR, STR annotation - find common patterns in different feline genomes
+**Repeats**
+ * Compare repetitive content
+ * Feline specific repeats
+ * Search for transposable elements in feline genomes.
  
 
