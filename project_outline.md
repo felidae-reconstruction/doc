@@ -93,7 +93,7 @@ Outgroups:
  * How domestication influenced the genome?
    * Domestic cats are very prone to the kidney desease - if the other cats are also prone to it?
 
-*Gene analysis and TransMap* [Annotation](https://github.com/felidae-reconstruction/doc/blob/master/annotation.md)
+*Gene analysis and TransMap* see [Annotation](https://github.com/felidae-reconstruction/doc/blob/master/annotation.md)
 
 1. Gene evolution
  * map domestic cat gene annotation and cat's rnaseq data to other genomes
