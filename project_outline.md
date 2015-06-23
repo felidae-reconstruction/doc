@@ -18,7 +18,7 @@ Felines:
 * Cheetah
 * African Lion
 * Tiger
-* Amur Leopard
+* Amur + Chineese Leopard
 * Jaguar
 * - Wildcat
 * - Af & Asian lion
