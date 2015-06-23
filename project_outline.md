@@ -6,7 +6,8 @@ Study Feline evolution:
 
 * Chromosome structure evolution: Felid-specific breakpoints, specie-specific breakpoints, genes involved into rearrangements
 * Nucleotide sequence evolution - selection analysis - constrained elements, dN/dS
-* Gene evolution (expansion, contraction, conserved genes, pseudogenes)
+* Gene evolution - expansion, contraction, conserved genes, pseudogenes
+* Evolution of repetitive elements: interspersed and tandem repeats, transposons
 * Evolution of traits - genes involved into the traits development
 
 **Multiple Alignments**
