@@ -12,6 +12,11 @@ Study Feline evolution:
 
 **Multiple Alignments**
 
+We are going to produce multiple alignments of feline species including several outgroups.
+Among the available feline assemblies we choose those that were assembled at least into scaffolds. We are not aware about the availability of the Lynx genome, and the other Feline species are either were not sequenced yet or don't have a good quality assembly. 
+The dog genome was selected as the closest outgroup for felines. The pangolin assembly is the outgroup to Carnivora family, we also included the primates lineage in order to perform comparison with the human genome.
+Some alignments of these species have been already produced in the mouse strain project performed at UCSC. We are going to carry some of those including the rodent species (Mouse (reference assembly), Rat, Prarie vole, Egyptan Gerboa), two species from the Bovidae family and an elephant asembly as the other outgroups to the feline species in our project.
+
 Felines:
 
 * Domestic cat (FelCat 8.0)
@@ -65,7 +70,7 @@ Outgroups:
  * Try MGRA - ?
  * Most tools reconstruct the rearrangements _scenario_. It's hardly possible to check if the given scenario really took place. (It could be also multiple possible scenarios)
  
-*MHC analysis*
+**MHC analysis**
  
 **Selection Analysis**
 
@@ -88,7 +93,7 @@ Outgroups:
  * How domestication influenced the genome?
    * Domestic cats are very prone to the kidney desease - if the other cats are also prone to it?
 
-*Gene analysis and TransMap* 
+*Gene analysis and TransMap* [Annotation](https://github.com/felidae-reconstruction/doc/blob/master/annotation.md)
 
 1. Gene evolution
  * map domestic cat gene annotation and cat's rnaseq data to other genomes
