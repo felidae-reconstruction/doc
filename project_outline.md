@@ -1,7 +1,9 @@
 Outline for the comparative felidae project
 
 **Goals** 
+
 Study Feline evolution:
+
 * Chromosome structure evolution: Felid-specific breakpoints, specie-specific breakpoints, genes involved into rearrangements
 * Nucleotide sequence evolution - selection analysis - constrained elements, dN/dS
 * Gene evolution (expansion, contraction, conserved genes, pseudogenes)
