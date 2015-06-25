@@ -27,3 +27,12 @@
 * TransMap genes
 * Investigate
   - http://genome.ucsc.edu/ENCODE/externalTools.html
+
+# Ideas for building better gene annotations
+- transmap + RNA-Seq (FC only) => AUGUSTUS
+- cat<->human 94mya, cat<->mouse ???
+- transmap will give us UTR and gene names
+- vaidate genes for good gene structure
+- compare with protein homology alignments
+- compare with cat mRNA,EST
+- assign stable id numbers for each transcript
