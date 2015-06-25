@@ -38,3 +38,5 @@
 - compare with cat mRNA,EST
 - assign stable id numbers for each transcript
 - Ensembl from FC 6.2
+  - based protein alignments, many from TREMBL
+- Brian's human protein alignments
