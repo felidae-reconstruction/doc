@@ -27,6 +27,9 @@
 * TransMap genes
 * Investigate
   - http://genome.ucsc.edu/ENCODE/externalTools.html
+* References
+  - Comparative analysis of the domestic cat genome reveals genetic signatures underlying feline biology and domestication
+    http://www.pnas.org/content/111/48/17230.full
 
 # Ideas for building better gene annotations
 - transmap + RNA-Seq (FC only) => AUGUSTUS hints
