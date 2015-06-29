@@ -25,7 +25,11 @@
 
 * RNA-Seq sources:
   - SRA (http://sra.dnanexus.com/?q=&fq[]=f_sn%3A%22Felis%20catus%22&fq[]=f_sn%3A%22Felis%20silvestris%22&fq[]=f_lst%3A%22RNA-Seq%22&result_type=Experiment)
-  - Ensembl ( ftp://ftp.ensembl.org/pub/current_data_files/felis_catus/Felis_catus_6.2/rnaseq/)
+  - Ensembl (ftp://ftp.ensembl.org/pub/current_data_files/felis_catus/Felis_catus_6.2/rnaseq/)
+    The RNA-Seq data comes from the Texas A&M College of Veterinary Medicine &
+    Biomedical Sciences as explained in more detail in
+    http://www.ensembl.org/info/genome/genebuild/2013_01_cat_genebuild.pdf
+    This data is not yet publicly available in SRA (Ensembl help desk).
 
 * retroposed genes identification
 * protein coding gene conservation
