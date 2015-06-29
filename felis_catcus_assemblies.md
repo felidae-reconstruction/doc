@@ -2,7 +2,7 @@
 
 CEGMA comparison of Felis catus 6.2 vs 8.0
 
-            | Prots  | %Complete | Total | Average | %Ortho  || Prots  | %Complete |  Total | Average | %Ortho  |
+| Group     | Prots  | %Complete | Total | Average | %Ortho  || Prots  | %Complete |  Total | Average | %Ortho  |
 | --------- | ------ | --------- | ----- | ------- | ------- || ------ | --------- | ------ | ------- | ------- |
 |  Complete |   223  |    89.92  |  316  |   1.42  |   29.15 ||    224 |     90.32 |   322  |   1.44  |   30.36 |
 |   Group 1 |    60  |    90.91  |   77  |   1.28  |   20.00 ||     60 |     90.91 |    77  |   1.28  |   20.00 |
