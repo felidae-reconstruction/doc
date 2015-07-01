@@ -62,12 +62,12 @@ Outgroups:
 
 **Synteny Analysis**
 
-1. Synteny blocks and breakpoints. see [Synteny and rearangements](synteny.md)
+1. Synteny blocks and breakpoints. see [Synteny and rearrangements](synteny.md)
  * Feline-specific breakpoints
  * Grimm Synteny can not evaluate synteny for too many species (5-6 maximally)
  * Summarize the pieces of software for synteny blocks
  
-2. Rearrangements. see [Synteny and rearangements](synteny.md)
+2. Rearrangements. see [Synteny and rearrangements](synteny.md)
  * How to classify the rearrangements occured to the whole scaffolds
  * Try MGRA - ?
  * Most tools reconstruct the rearrangements _scenario_. It's hardly possible to check if the given scenario really took place. (It could be also multiple possible scenarios)
