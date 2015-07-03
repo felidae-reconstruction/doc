@@ -24,6 +24,9 @@ in a separate table.
 
 ### T-cell FIV response profiling (PRJEB4969)
 
+Single RNA-seq reads were obtained with Illumina Genome Analyzer IIx. The average read 
+length is 36.66 bp, the total size is 1.9 Gbp for each sample.
+
 | Sample Accession | Name                       | SRA Accessions |
 |------------------|----------------------------|----------------|
 | SAMEA2250359     | E-MTAB-2083:cell_culture_6 | ERS370973      |
@@ -36,6 +39,9 @@ in a separate table.
 | SAMEA2250352     | E-MTAB-2083:cell_culture_4 | ERS370966      |
 
 ### Cheetah skin spot transcriptome (PRJNA171961)
+
+Single RNA-seq reads were obtained with Illumina Genome Analyzer IIx. The average read
+length is 36 bp, the total size is 1.4 Gbp for each sample.
 
 | Sample Accession | Name          | SRA Accessions |
 |------------------|---------------|----------------|
@@ -50,11 +56,17 @@ in a separate table.
 
 ### Tiger transcriptome (PRJNA210249)
 
+Paired RNA-seq reads with the nominal length of 300 bp were obtained with Illumina HiSeq
+2000. The average length for single-end reads is 90 bp, the total size is 9.2 Gbp.
+
 | Sample Accession | Name                      | SRA Accessions |
 |------------------|---------------------------|----------------|
 | SAMN02222696     | SiberianTiger-00-Blood-01 | SRS454469      |
 
 ### Feline adipose transcriptome (PRJNA200316)
+
+Single RNA-seq reads were obtained with Illumina HiSeq 2000. The average read length is
+100 bp, the total size is 3.2 Gbp for each sample.
 
 | Sample Accession | Name               | SRA Accessions |
 |------------------|--------------------|----------------|
@@ -81,12 +93,18 @@ in a separate table.
 
 ### Felis catus testicle transcriptome (PRJNA177330)
 
+Single RNA-seq reads were obtained with Illumina Genome Analyzer. The average read length
+is 50 bp, the total size is 3.4 Gbp.
+
 | Sample Accession | Name         | SRA Accessions |
 |------------------|--------------|----------------|
 | SAMN01761015     | RNA-seq, cat | SRS367901      |
 
 ### Cheetah black plot transcriptome (SRX034821)
 
-| Sample Accession | Name              | SRA Accessions |
-|------------------|-------------------|----------------|
-| SAMN00149625     | Cheetah skin EDGE | SRS367901      |
+Two sets of single RNA-seq reads were obtained with Illumina Genome Analyzer. The average
+read length is 36 bp in both runs which sizes are 1.4 Gbp and 1.2 Gbp.
+
+| Sample Accession | Name              | SRA Accessions       |
+|------------------|-------------------|----------------------|
+| SAMN00149625     | Cheetah skin EDGE | SRX034821, SRX034822 |
