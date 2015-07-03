@@ -54,7 +54,7 @@ According to the Table \ref{table:ensembl_refseq_stats} the number of transcript
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{images/exon_density_human_mouse_cat.pdf}
-\caption{For each reported ensembl transcript we calculated the density of identified exons. The lists of exons densities were sorted, and compressed by counting average value in non-overlapping windows of 50 density values. The procedure was performed for mouse (GRCm38), human (GRCh38), and domestic cat (6.2) gene annotations.}
+\caption{For each reported ensembl transcript we calculated the density of identified exons. The lists of exons densities were sorted and compressed by average value in non-overlapping windows of 50 density values. The procedure was performed for mouse (GRCm38), human (GRCh38), and domestic cat (6.2) gene annotations.}
 \label{fig:human_mouse_cat_exon_density}
 \end{figure}
 
@@ -111,7 +111,7 @@ Other clusters& 0.98\% & 1.0\%\\
 \end{table}
 
 \section{Suggested approach}
-We suggest an incorporation of Augustus guided by mRNA data and TransMap approaches in order to create a newer annotation of the domestic cat genome. This approach is being used in the mouse strain project currently performed at UCSC and demonstrates the improvement of the mouse gene annotation in the different mouse strains. We are going to collaborate with Dr. Mario Stanke who developed this method and agreed to collaborate in this work.
+We suggest an incorporation of Augustus guided by mRNA data and TransMap approaches in order to create a newer annotation of the domestic cat genome. This approach is being used in the mouse strain project currently performed at UCSC and demonstrates the improvement of the mouse gene annotation in the different mouse strains. We are going to collaborate with Dr. Mario Stanke who developed this method and agreed to join together efforts on this work.
 So we are not going to make \textit{de novo} predictions, instead the hints obtained from RNA-Seq and TransMap from human alignments will be used as the evidence for Augustus (s. Figure \ref{fig:hints_for_augustus}). 
 
 %Figure4
