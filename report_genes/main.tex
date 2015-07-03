@@ -8,36 +8,45 @@
     top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \linespread{1.5}
 
+
 \begin{document}
 \large
 \centerline{}
 \vspace*{20pt}
 \section{Introduction}
-The comparative felidae project aims to perform analysis of gene evolution, evolution of breakpoints and synteny, and also the analysis of selection signatures among the felines. Gene evolution analysis requires a good gene annotation including correct predictions of 5' and 3' UTR regions, exons and intron structure. 
-We plan to use transMap from the domestic cat gene annotation to other felines.
-After an overview of the current available annotations of the domestic cat genome we came to a conclusion that we can improve those using Augustus prediction tool guided by the available cat mRNA data. 
-The improvement of the cat's annotation would allow for more precise gene evolution analysis.  In particular, inaccurate stop/start codon predictions as well as errors in splice cite positions and in particular lack of exons may cause artifacts when mapping genes through the species.  
+The comparative felidae project aims to perform analysis of gene evolution, evolution of breakpoints and synteny, and also the analysis of selection signatures among the felines. Gene evolution analysis requires a good gene annotation including correct predictions of 5' and 3' UTR regions, exon and intron structure. 
+We plan to use TransMap approach from the domestic cat gene annotation to other felines. \\
+After an overview of the current available annotations of the domestic cat genome we came to a conclusion that it can be possible to produce a better annotation using Augustus prediction tool guided by the available cat mRNA data. \\
+The improvement of the cat's annotation would allow for more precise gene evolution analysis.  In particular, inaccurate stop/start codon predictions as well as errors in splice cite positions and lack of exons may cause artifacts when mapping genes through the species.  \\
 Below we summarize the information about the available Felis catus gene annotation resources. We compare the results under consideration that the estimate of the feline gene number is 19000 - 20000, and the number of their alternative isoforms is $\sim$60000.
 
 
 \section{Available gene annotations}
 \subsection{Annotation from \textit{Pontius et al.}}
-It was based on the first draft of cat genome which consisted of the contigs that were aligned with the other available annotated mammalian genomes sequences. The gene predictions were based on pairwise RBM between the aligned sequences that were screened for annotated genes and gene features.
+This annotation (2007) was based on the first draft of cat genome which consisted of the contigs that were aligned with the other available annotated mammalian genomes sequences. The gene predictions were based on pairwise RBM between the aligned sequences that were screened for annotated genes and gene features.
 
-However this annotation was lost so that we were not able to evaluate it’s results. Anyway, this analysis incorporated data and methods that were available on 2007. Since that time the genome assemblies were improved, as well as mapped gene annotations were updated.
+However this annotation was lost so that we were not able to evaluate it’s results. Anyway, this analysis incorporated data and methods that were available in 2007. Since that time the genome assemblies were improved,  and also mapped gene annotations were updated.
 
 
 \subsection{Annotation from \textit{Tamazian et al.}}
-This annotation is based on the interspecies exon alignments.
+This analysis aimed to annotate the coding sequences in the cat genome and was based on the interspecies exon alignments.
 The genome features were derived from a comparative gene identification strategy using BLAST alignments between gene exons of the reference genome from eight reference mammalian gene maps (human, chimpanzee, macaque, dog, cow, horse, rat, and mouse) obtained from the Ensembl Gene 75 database.
-However the goal of this analysis was not the full gene annotation but the identification of the coding sequences. For this reason it lacks the prediction of exact gene structure that would be important for the gene evolution analysis. For this reason we don’t included the numeric statistics obtained on this annotation as we do for the annotations discussed further.
+Due to the aim different from the full gene annotation it lacks the prediction of exact gene structure that would be important for the gene evolution analysis. 
 
 \subsection{Ensembl annotation}
-Ensembl gene annotation is based on protein, mRNA, EST, and RNAseq alignments and gene predictions by GeneWise and Exonerate. The cat mRNA and EST sequences were obtained from the GenBank database, the proteins were obtained from the UniProt database. There are about 200 cat proteins in the SwissProt manually curated compartment of the UniProt. However non-cat proteins  were also used in these alignments.
+Ensembl gene annotation is based on protein, mRNA, EST, and RNAseq alignments and gene predictions by GeneWise and Exonerate. The cat mRNA and EST sequences were obtained from the GenBank database, the proteins were obtained from the UniProt database. There are $\sim$200 cat proteins in the SwissProt manually curated compartment of the UniProt. However non-cat proteins  were also used in these alignments.\\
 According to our estimation this is the best known gene annotation. 
-However it has a significant number of errors among the predicted genes beginning with a few nucleotide imprecision (like a TT splice site 2 base pairs off from a regular AG splice site that was a conserved exon boundary in 15 of 16 other mammals) and ending with wrong prediction or loss of exons.
-The example of inaccurate gene prediction from this dataset is shown on Figures \ref{fig:missed_exons_mrna_1}, \ref{fig:missed_exons_mrna_2}, \ref{fig:gene_in_ltr}.
-We performed an automatic estimation of each reported transcript from this annotation for the following qualities: gaps in coding sequences, CDS and UTR showing unknown and non-canonical splice sites. The transcripts with the identified issues were called erroneous. Next we grouped the overlapping transcripts in order to identify the clusters corresponding to the gene locations. We distinguish the clusters for those that didn’t contain errors in transcripts and those that contained only erroneous transcripts (\ref{table:ensembl_refseq_stats}). 
+However it has a significant number of errors among the predicted genes beginning with a few nucleotide imprecision (like a \texttt{TT} splice site 2 base pairs off from a regular \texttt{AG} splice site that can be a conserved exon boundary in the other compared mammals) and ending with wrong prediction or loss of exons.\\
+The genome browser (http://hgwdev.cse.ucsc.edu) examples of inaccurate gene prediction from this dataset are shown on Figures \ref{fig:missed_exons_mrna_1}, \ref{fig:missed_exons_mrna_2}, \ref{fig:gene_in_ltr}.
+We performed an automatic estimation of each reported transcript from this annotation for the following qualities: gaps in coding sequences, CDS and UTR showing unknown and non-canonical splice sites. The transcripts with the identified issues were called erroneous. Next we grouped the overlapping transcripts in order to identify the clusters corresponding to the gene locations. We distinguish the clusters for those that didn’t contain errors in transcripts and those that contained only erroneous transcripts (Table \ref{table:ensembl_refseq_stats}). \\
+According to the Table \ref{table:ensembl_refseq_stats} the number of transcripts reported in this annotation is 22{,}656. Whereas the  number of isoforms in mammalian genome is estimated as $\sim$60{,}000 which indicates the incompleteness of the cat gene annotation (Figure \ref{fig:human_mouse_cat_exons}).
+%Figure0
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{images/exon_distr_human_mouse_cat.pdf}
+\caption{Distribution of exon lengths in mouse (GRCm38), human (GRCh38), and domestic cat (6.2) gene annotations.}
+\label{fig:human_mouse_cat_exons}
+\end{figure}
 
 \textit{Montague et al.} based their research on the ensembl annotation.
 
@@ -66,10 +75,9 @@ We performed an automatic estimation of each reported transcript from this annot
 \label{fig:gene_in_ltr}
 \end{figure}
 
-Genome browser examples (http://hgwdev.cse.ucsc.edu) of erroneous ensembl gene annotation instances for the FelCat 6.2 assembly.
 
 \subsection{RefSeq annotation}
-refSeq gene prediction is based on the alignments of the NCBI RefSeq collection of the cat RNA to the reference cat genome.
+RefSeq gene prediction is based on the alignments of the NCBI RefSeq collection of the cat RNA to the reference cat genome.
 
 \begin{table}
 \centering
