@@ -17,7 +17,7 @@
 The comparative felidae project aims to perform analysis of gene evolution, evolution of breakpoints and synteny, and also the analysis of selection signatures among the felines. Gene evolution analysis requires a good gene annotation including correct predictions of 5' and 3' UTR regions, exon and intron structure. 
 We plan to use TransMap approach from the domestic cat gene annotation to other felines. \\
 After an overview of the current available annotations of the domestic cat genome we came to a conclusion that it can be possible to produce a better annotation using Augustus prediction tool guided by the available cat mRNA data. \\
-The improvement of the cat's annotation would allow for more precise gene evolution analysis.  In particular, inaccurate stop/start codon predictions as well as errors in splice cite positions and lack of exons may cause artifacts when mapping genes through the species.  \\
+The improvement of the cat's annotation would allow for more precise gene evolution analysis.  In particular, inaccurate stop/start codon predictions as well as errors in splice cite positions and lack of exons may cause artifacts when mapping genes through the species. Another point is that a missing codon may be an evidence for gene divergence. We should provide more confidence that such finding are not the annotation artifacts.\\
 Below we summarize the information about the available Felis catus gene annotation resources. We compare the results under consideration that the estimate of the feline gene number is 19000 - 20000, and the number of their alternative isoforms is $\sim$60000.
 
 
@@ -39,13 +39,23 @@ According to our estimation this is the best known gene annotation.
 However it has a significant number of errors among the predicted genes beginning with a few nucleotide imprecision (like a \texttt{TT} splice site 2 base pairs off from a regular \texttt{AG} splice site that can be a conserved exon boundary in the other compared mammals) and ending with wrong prediction or loss of exons.\\
 The genome browser (http://hgwdev.cse.ucsc.edu) examples of inaccurate gene prediction from this dataset are shown on Figures \ref{fig:missed_exons_mrna_1}, \ref{fig:missed_exons_mrna_2}, \ref{fig:gene_in_ltr}.
 We performed an automatic estimation of each reported transcript from this annotation for the following qualities: gaps in coding sequences, CDS and UTR showing unknown and non-canonical splice sites. The transcripts with the identified issues were called erroneous. Next we grouped the overlapping transcripts in order to identify the clusters corresponding to the gene locations. We distinguish the clusters for those that didn’t contain errors in transcripts and those that contained only erroneous transcripts (Table \ref{table:ensembl_refseq_stats}). \\
-According to the Table \ref{table:ensembl_refseq_stats} the number of transcripts reported in this annotation is 22{,}656. Whereas the  number of isoforms in mammalian genome is estimated as $\sim$60{,}000 which indicates the incompleteness of the cat gene annotation (Figure \ref{fig:human_mouse_cat_exons}).
+According to the Table \ref{table:ensembl_refseq_stats} the number of transcripts reported in this annotation is 22{,}656. Whereas the  number of isoforms in mammalian genome is estimated as $\sim$60{,}000 which indicates the incompleteness of the cat gene annotation (Figures \ref{fig:human_mouse_cat_exons}, \ref{fig:human_mouse_cat_exon_density}). The high fragmentation level of predicted exons can be observed on the Figure \ref{fig:human_mouse_cat_exon_density}.
+
 %Figure0
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{images/exon_distr_human_mouse_cat.pdf}
 \caption{Distribution of exon lengths in mouse (GRCm38), human (GRCh38), and domestic cat (6.2) gene annotations.}
 \label{fig:human_mouse_cat_exons}
+\end{figure}
+
+
+%Figure5
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{images/exon_density_human_mouse_cat.pdf}
+\caption{For each reported ensembl transcript we calculated the density of identified exons. The lists of exons densities were sorted, and compressed by counting average value in non-overlapping windows of 50 density values. The procedure was performed for mouse (GRCm38), human (GRCh38), and domestic cat (6.2) gene annotations.}
+\label{fig:human_mouse_cat_exon_density}
 \end{figure}
 
 \textit{Montague et al.} based their research on the ensembl annotation.
@@ -101,9 +111,17 @@ Other clusters& 0.98\% & 1.0\%\\
 \end{table}
 
 \section{Suggested approach}
-We suggest an incorporation of Augustus guided by mRNA data and TransMap approaches in order to create a newer annotation of the domestic cat genome.
-We will try to use mRNA obtained in RNA-Seq experiments for domestic cat, cheetah, and tiger in order to support Augustus prediction model with the hits. We will check any input data for quality before including it into the pipeline. Due to the modest size of the available mRNA data we are going also to include as evidence the TransMap of human gene annotation.\\
-We discussed this idea with Mario Stanke who agrees to support this work. 
+We suggest an incorporation of Augustus guided by mRNA data and TransMap approaches in order to create a newer annotation of the domestic cat genome. This approach is being used in the mouse strain project currently performed at UCSC and demonstrates the improvement of the mouse gene annotation in the different mouse strains. We are going to collaborate with Dr. Mario Stanke who developed this method and agreed to collaborate in this work.
+So we are not going to make \textit{de novo} predictions, instead the hints obtained from RNA-Seq and TransMap from human alignments will be used as the evidence for Augustus (s. Figure \ref{fig:hints_for_augustus}). 
+
+%Figure4
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{images/hints_from_transmap_to_augustus.png}
+\caption{Hints from TransMap alignments for Augustus}
+\label{fig:hints_for_augustus}
+\end{figure}
+
 
 \section{References}
 
