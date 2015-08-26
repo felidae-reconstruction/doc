@@ -15,7 +15,7 @@ Study Feline evolution:
 We are going to produce multiple alignments of feline species including several outgroups.
 Among the available feline assemblies we choose those that were assembled at least into scaffolds. We are not aware about the availability of the Lynx genome ('?' sign), and the other feline species are either were not sequenced yet or don't have a good quality assembly ('-' means not available or just reads). 
 
-The dog genome was selected as the closest outgroup for felines. The pangolin assembly is the outgroup to Carnivora family, we also included the primates lineage in order to perform comparison with the human genome.
+The hyena and dog genomes were selected as the closest outgroup for felines. The pangolin assembly is the outgroup to Carnivora family, we also included the primates lineage in order to perform comparison with the human genome.
 
 We are going to include the mouse genome into our alignments because it's well annotated and it can help with transmapping genes. We are going to carry some alignments performed in the mouse strain project performed at UCSC to our project as other outgroups to the feline species. They include the rodent species (Mouse (reference assembly), Rat, Prarie vole, Egyptan Gerboa), two species from the Bovidae family, and an elephant assembly.
 
@@ -27,6 +27,7 @@ Felines:
 * Tiger
 * Amur + Chineese Leopard
 * Jaguar
+* caracal - reads to be assembled at Doby
 * - Wildcat
 * - Af & Asian lion
 * - Snow Leopard
@@ -37,7 +38,6 @@ Felines:
 * - Sunda Cl.Leopard 
 * - Leopard cat
 * - Fishing cat
-* - caracal
 * - Rusty Spotted cat
  
 Outgroups:
@@ -58,7 +58,7 @@ Outgroups:
 * Sheep
 * Cow
 * - Malayan pangolin
-* ? Hyena
+* Hyena
 
 **Synteny Analysis**
 
@@ -66,6 +66,7 @@ Outgroups:
  * Feline-specific breakpoints
  * Grimm Synteny can not evaluate synteny for too many species (5-6 maximally)
  * Summarize the pieces of software for synteny blocks
+ * Use ragout-maf2synteny (Mikhail Kolmogorov from Son Pham group)
  
 2. Rearrangements. see [Synteny and rearrangements](synteny.md)
  * How to classify the rearrangements occured to the whole scaffolds
